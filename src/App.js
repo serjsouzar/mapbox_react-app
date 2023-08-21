@@ -9,11 +9,9 @@ function App() {
 
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(135.7082);
-  const [lat, setLat] = useState(35.01); //42.35
+  const [lng, setLng] = useState(-43.21);
+  const [lat, setLat] = useState(-22.94); 
   const [zoom, setZoom] = useState(9);
-
-  //35.01771132545664, 135.70820837321418
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -34,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Ei, tente interagir com o mapa!</h1>
       <div className="sidebar">
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </div>
